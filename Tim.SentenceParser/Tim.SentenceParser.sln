@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tim.SentenceParser", "Tim.SentenceParser\Tim.SentenceParser.csproj", "{3857073F-9F26-447C-8652-6483A5B7A437}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tim.SentenceParser.Tests", "Tim.SentenceParser.Tests\Tim.SentenceParser.Tests.csproj", "{4F7A219A-111A-495D-BE50-7D795DEA57CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3857073F-9F26-447C-8652-6483A5B7A437}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3857073F-9F26-447C-8652-6483A5B7A437}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3857073F-9F26-447C-8652-6483A5B7A437}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3857073F-9F26-447C-8652-6483A5B7A437}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F7A219A-111A-495D-BE50-7D795DEA57CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F7A219A-111A-495D-BE50-7D795DEA57CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F7A219A-111A-495D-BE50-7D795DEA57CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F7A219A-111A-495D-BE50-7D795DEA57CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

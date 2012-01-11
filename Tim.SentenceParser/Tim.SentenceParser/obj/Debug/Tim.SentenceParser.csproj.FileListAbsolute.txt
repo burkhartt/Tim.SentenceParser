@@ -1,0 +1,5 @@
+C:\_Application\Tim.SentenceParser\Tim.SentenceParser\Tim.SentenceParser\bin\Debug\Tim.SentenceParser.dll
+C:\_Application\Tim.SentenceParser\Tim.SentenceParser\Tim.SentenceParser\bin\Debug\Tim.SentenceParser.pdb
+C:\_Application\Tim.SentenceParser\Tim.SentenceParser\Tim.SentenceParser\obj\Debug\ResolveAssemblyReference.cache
+C:\_Application\Tim.SentenceParser\Tim.SentenceParser\Tim.SentenceParser\obj\Debug\Tim.SentenceParser.dll
+C:\_Application\Tim.SentenceParser\Tim.SentenceParser\Tim.SentenceParser\obj\Debug\Tim.SentenceParser.pdb
