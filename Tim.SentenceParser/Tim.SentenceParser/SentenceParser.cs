@@ -4,12 +4,37 @@
     {
         public static string TrimSentence(this string @string, int length)
         {
-            if (length <= 0 || string.IsNullOrEmpty(@string)) return string.Empty;
-            if (length >= @string.Length) return @string;
+            if (TheInputsAreNotValid(length, @string)) return AnEmptyString();
+            if (TheStringIsLongerThanTheLengthProvided(length, @string)) return TheOriginalString(@string);
 
-            if (TheNextCharacterIsEmpty(@string, length)) return @string.Substring(0, length);
+            if (TheNextCharacterIsEmpty(@string, length)) return TheNormallyParsedString(length, @string);
 
             return TheSentenceEndingAfterThePreviousWord(@string, length);
+        }
+
+        private static string TheNormallyParsedString(int length, string @string)
+        {
+            return @string.Substring(0, length);
+        }
+
+        private static bool TheInputsAreNotValid(int length, string @string)
+        {
+            return length <= 0 || string.IsNullOrEmpty(@string);
+        }
+
+        private static string AnEmptyString()
+        {
+            return string.Empty;
+        }
+
+        private static string TheOriginalString(string @string)
+        {
+            return @string;
+        }
+
+        private static bool TheStringIsLongerThanTheLengthProvided(int length, string @string)
+        {
+            return length >= @string.Length;
         }
 
         public static string TrimSentence(this string @string, int length, bool addEllipsis)
