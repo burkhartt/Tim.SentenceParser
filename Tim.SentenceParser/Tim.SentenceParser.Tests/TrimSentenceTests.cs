@@ -47,6 +47,16 @@ namespace Tim.SentenceParser.Tests
         }
 
         [Test]
+        public void When_the_length_is_at_the_position_of_a_whitespace_then_the_substring_should_be_returned()
+        {
+            var sentence = "The big sea creature was nice.";
+
+            var result = sentence.TrimSentence(12);
+
+            result.ShouldEqual("The big sea");
+        }
+
+        [Test]
         public void When_I_am_given_an_empty_string_with_the_ellipsis_option_return_an_empty_string()
         {
             var emptyString = string.Empty;
@@ -81,6 +91,16 @@ namespace Tim.SentenceParser.Tests
             var sentence = "The big sea creature was nice.";
 
             var result = sentence.TrimSentence(15, true);
+
+            result.ShouldEqual("The big sea...");
+        }
+
+        [Test]
+        public void When_the_length_is_at_the_position_of_a_whitespace_and_the_ellipsis_is_wanted_then_the_substring_with_an_ellipsis_should_be_returned()
+        {
+            var sentence = "The big sea creature was nice.";
+
+            var result = sentence.TrimSentence(12, true);
 
             result.ShouldEqual("The big sea...");
         }
