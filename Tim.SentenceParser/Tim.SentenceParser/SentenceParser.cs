@@ -6,7 +6,6 @@
         {
             if (TheInputsAreNotValid(length, @string)) return AnEmptyString();
             if (TheStringIsLongerThanTheLengthProvided(length, @string)) return TheOriginalString(@string);
-
             if (TheNextCharacterIsEmpty(@string, length)) return TheNormallyParsedString(length, @string);
 
             return TheSentenceEndingAfterThePreviousWord(@string, length);
