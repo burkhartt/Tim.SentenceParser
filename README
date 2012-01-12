@@ -1,0 +1,20 @@
+This module allows you to substring a sentence in a way that makes sense.
+
+Do you ever get worry about trimming down a large paragraph with the fear that the last chopped off word will be a
+swear word or something inappropriate? Well, with this module, you don't have to worry about it.
+
+How to use:
+
+Sample sentence: 
+
+var sentence = "The quick, brown fox jumped over the fence.";
+
+1) Trim the sentence:
+
+> sentence.TrimSentence(25);
+  "The quick, brown fox"
+
+2) Trim the sentence and add an ellipsis if necessary
+
+> sentence.TrimSentence(25, true);
+  "The quick, brown fox..."
