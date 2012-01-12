@@ -5,7 +5,7 @@
         public static string TrimSentence(this string @string, int length)
         {
             if (TheInputsAreNotValid(length, @string)) return AnEmptyString();
-            if (TheStringIsLongerThanTheLengthProvided(length, @string)) return TheOriginalString(@string);
+            if (TheLengthIsLongerThanTheInputString(length, @string)) return TheOriginalString(@string);
             if (TheNextCharacterIsEmpty(@string, length)) return TheNormallyParsedString(length, @string);
 
             return TheSentenceEndingAfterThePreviousWord(@string, length);
@@ -31,7 +31,7 @@
             return @string;
         }
 
-        private static bool TheStringIsLongerThanTheLengthProvided(int length, string @string)
+        private static bool TheLengthIsLongerThanTheInputString(int length, string @string)
         {
             return length >= @string.Length;
         }
