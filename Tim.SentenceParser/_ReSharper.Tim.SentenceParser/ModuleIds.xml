@@ -1,4 +1,0 @@
-<Modules>
-  <Module PersistentId="3857073F-9F26-447C-8652-6483A5B7A437" ModuleId="Tim.SentenceParser" />
-  <Module PersistentId="4F7A219A-111A-495D-BE50-7D795DEA57CA" ModuleId="Tim.SentenceParser.Tests" />
-</Modules>
